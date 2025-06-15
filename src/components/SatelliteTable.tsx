@@ -186,12 +186,12 @@ export default function SatelliteTable(): JSX.Element {
       )}
       itemContent={(index, satelliteInfo) => (
         <>
-          <td>{satelliteInfo?.name}</td>
-          <td>{satelliteInfo?.noradCatId}</td>
-          <td>{satelliteInfo?.orbitCode.replace(/{|}/g, '')}</td>
-          <td>{satelliteInfo?.objectType}</td>
-          <td>{satelliteInfo?.countryCode}</td>
-          <td>{satelliteInfo?.launchDate}</td>
+          <td className={index % 2 === 0 ? 'bg-[#1f1f1f] text-white' : 'bg-[#2a2a2a] text-white'}>{satelliteInfo?.name}</td>
+          <td className={index % 2 === 0 ? 'bg-[#1f1f1f] text-white' : 'bg-[#2a2a2a] text-white'}>{satelliteInfo?.noradCatId}</td>
+          <td className={index % 2 === 0 ? 'bg-[#1f1f1f] text-white' : 'bg-[#2a2a2a] text-white'}>{satelliteInfo?.orbitCode.replace(/{|}/g, '')}</td>
+          <td className={index % 2 === 0 ? 'bg-[#1f1f1f] text-white' : 'bg-[#2a2a2a] text-white'}>{satelliteInfo?.objectType}</td>
+          <td className={index % 2 === 0 ? 'bg-[#1f1f1f] text-white' : 'bg-[#2a2a2a] text-white'}>{satelliteInfo?.countryCode}</td>
+          <td className={index % 2 === 0 ? 'bg-[#1f1f1f] text-white' : 'bg-[#2a2a2a] text-white'}>{satelliteInfo?.launchDate}</td>
         </>
       )}
     />
